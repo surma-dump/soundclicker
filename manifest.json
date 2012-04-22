@@ -1,0 +1,22 @@
+{
+	"name": "SoundClicker",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Hogs the SoundClick spotlight",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://soundclick.com/*",
+				"*://*.soundclick.com/*"
+			],
+			"js": [
+				"refresher.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"homepage_url": "http://github.com/surma/soundclicker",
+	"incognito": "spanning",
+	// "options_page": "aFile.html",
+	"permissions": []
+}
