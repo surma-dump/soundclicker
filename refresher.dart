@@ -1,9 +1,9 @@
 #import ("dart:html");
 
-String template = @'
+String template = '''
 <div style="position: fixed; bottom: 0; right: 0; background-color: white; border: 2px solid black;" id="soundclicker">
 	Start SoundClicker: <button>Go</button>
-</div>';
+</div>''';
 
 void injectHTML(String html) {
 	var ctrl_panel = new Element.html(html);
